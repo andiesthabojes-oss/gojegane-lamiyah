@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #f7ead9;
+  --bg-soft: #fff6ea;
+  --panel: #fffaf3;
+  --panel-strong: #f2dfc2;
+  --brown-dark: #4b2e1f;
+  --brown-medium: #7a4b2a;
+  --brown-soft: #a26a3d;
+  --gold-main: #e6b325;
+  --gold-soft: #f4cf62;
+  --gold-deep: #c99314;
+  --cream: #fff0d8;
+  --leaf: #5f8f3a;
+  --leaf-soft: #87b05a;
+  --text-main: #3d2618;
+  --text-soft: #6b4b34;
+  --text-on-dark: #fff8ef;
+  --danger: #b94a3a;
+  --success: #4e8b45;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at top, rgba(244, 207, 98, 0.25), transparent 30%),
+    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-main) 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.brand-display {
+  font-family: var(--font-display);
+}
+
+.panel-theme {
+  background: linear-gradient(180deg, var(--panel) 0%, #fff6ea 100%);
+  border: 2px solid rgba(122, 75, 42, 0.12);
+  box-shadow: 0 12px 32px rgba(75, 46, 31, 0.12);
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, var(--gold-soft), var(--gold-main));
+  color: var(--brown-dark);
+  box-shadow: 0 10px 24px rgba(201, 147, 20, 0.24);
+}
+
+.btn-leaf {
+  background: linear-gradient(180deg, var(--leaf-soft), var(--leaf));
+  color: var(--text-on-dark);
+  box-shadow: 0 10px 24px rgba(95, 143, 58, 0.22);
+}
